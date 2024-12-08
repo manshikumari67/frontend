@@ -1,0 +1,52 @@
+/* Header styles */
+header {
+    z-index: 1000;
+  }
+  
+  nav {
+    position: relative;
+  }
+  
+  /* Modal Styles */
+  .ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  .ReactModal__Content {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  /* Add responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .hidden {
+      display: block !important;
+    }
+  }
+  
+  .menu-item {
+    display: block;
+    padding: 12px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .social-icon {
+    padding: 0 10px;
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #0073e6;
+  }
+  

@@ -1,0 +1,61 @@
+/* Main container */
+.dashboard-container {
+    display: flex;
+    transition: all 0.3s ease;
+  }
+  
+  /* Sidebar Styles */
+  .sidebarMenu {
+    position: fixed;
+    top: 0;
+    left: -240px;  /* Initially hidden off-screen */
+    width: 240px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .sidebarMenu.open {
+    transform: translateX(240px); /* Slide in */
+  }
+  
+  .sidebarMenu .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    transition: margin-left 0.3s ease;
+    flex-grow: 1;
+  }
+  
+  .main-content.active {
+    margin-left: 240px; /* Push content to the right when sidebar is open */
+  }
+
+  .socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between icons */
+  }
+  
+  .socialMedia a {
+    display: inline-block;
+    text-align: center;
+    color: inherit;
+    font-size: 2rem;
+  }
+  
+  .socialMedia a:hover {
+    opacity: 0.8;
+  }
+  
