@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from "react";
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -32,3 +33,23 @@ function Layout() {
 }
 
 export default Layout;
+=======
+import Header from './components/Header/Header'
+ import Footer from './components/Footer/Footer'
+import { Outlet } from 'react-router-dom'
+
+
+ function Layout() {
+ 
+
+    return (
+      <>
+       <Header />
+       <Outlet/>
+       <Footer/>
+      </>
+    )
+  }
+  
+  export default Layout
+>>>>>>> 3e8a96335667360a6d3c9822415fcf4cf6c193a3
