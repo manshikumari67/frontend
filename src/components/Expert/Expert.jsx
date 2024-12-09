@@ -5,11 +5,7 @@ export default function Expert() {
                 <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                     <div className="md:5/12 lg:w-5/12">
                         <img
-<<<<<<< HEAD
                             src="src/assets/expert1.webp"
-=======
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStuPsfhSYLlk0HrtOpPbNmNlTwqXnIskOvKg&s"
->>>>>>> 3e8a96335667360a6d3c9822415fcf4cf6c193a3
                             alt="image"
                         />
                     </div>
@@ -18,24 +14,15 @@ export default function Expert() {
                             Experts && Staffs
                         </h1>
                         <h3 className="mt-6 text-gray-600 md:text-2xl">
-<<<<<<< HEAD
                         Experts are essential in addressing water scarcity because they bring specialized knowledge, skills, and innovative solutions to the problem. They provide insights into water management, climate change, and environmental impacts, enabling the development of strategies for efficient water use, conservation, and sustainable practices. By designing technologies, creating policies, and offering expert advice, they help tackle complex issues such as over-extraction, pollution, and climate-induced water shortages. 
                         </h3>
                         <p className="mt-4 text-gray-600">
                         Their work ensures that water resources are managed effectively, promoting equitable access and long-term sustainability for communities worldwide.
                         
-=======
-                        WRI brings together nearly 1,900 staff and experts who are leaders in their fields. Their work spans topics such as food and land use, energy, cities, economics, finance, governance and more. Our staff and researchers work globally and in 12 focus countries to meet people’s essential needs, to protect and restore nature, and to stabilize the climate and build resilient communities.
-                        </h3>
-                        <p className="mt-4 text-gray-600">
-                            Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at?
-                            Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.
->>>>>>> 3e8a96335667360a6d3c9822415fcf4cf6c193a3
                         </p>
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
 
 
             <div className="container mx-auto p-4">
@@ -237,9 +224,7 @@ export default function Expert() {
                 </div>
             </div>
         </div>
-    );
-=======
->>>>>>> 3e8a96335667360a6d3c9822415fcf4cf6c193a3
+    
         </div>
-    );
+    )
   }
