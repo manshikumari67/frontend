@@ -6,7 +6,6 @@ function AddQuestion() {
 
 
   return (
-<<<<<<< HEAD
     <div className="w-full bg-gray-100 py-12">
     <div className="flex justify-center px-4 w-full max-w-screen-xl">
       {/* Sidebar */}
@@ -20,20 +19,8 @@ function AddQuestion() {
       </div>
     </div>
   </div>
-=======
-    <div className="quora__contents">
-        <div className="quora__content">
-          <SideBar />
-          <Feed/>
-        </div>
-      </div>
->>>>>>> 3e8a96335667360a6d3c9822415fcf4cf6c193a3
    
   )
 }
 
 export default AddQuestion
-<<<<<<< HEAD
-=======
-
->>>>>>> 3e8a96335667360a6d3c9822415fcf4cf6c193a3
