@@ -93,12 +93,12 @@ export default function Header() {
                             <IoIosNotifications size={30} />
                         </Link>
 
-                        <Link
-                            to="#"
+                        <NavLink
+                            to="/login"
                             className="text-gray-800 flex hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg w-12 focus:outline-none"
                         >
                            <h3>Login</h3>
-                        </Link>
+                        </NavLink>
                         <NavLink
                             to="#"
                             onClick={toggleSidebar} // Trigger sidebar toggle

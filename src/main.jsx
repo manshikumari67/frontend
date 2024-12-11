@@ -18,6 +18,7 @@ import Agriculture from './components/SideBar/Agriculture.jsx'
 import Industry from './components/SideBar/Industry.jsx'
 import Campaigns from './components/SideBar/Campaigns.jsx'
 import Donate from './components/Donate/Donate.jsx'
+import Login from './Login.jsx'
 
 
 const router=createBrowserRouter([
@@ -71,6 +72,14 @@ const router=createBrowserRouter([
       {
         path: "/donate",
         element: <Donate/>
+      },
+      {
+        path:"/login",
+        element: <Login/>
+      },
+      {
+        path: "",
+        element: ""
       },
     ]
   }
