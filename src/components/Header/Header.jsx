@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { CgProfile } from "react-icons/cg";
 import { IoIosNotifications } from "react-icons/io";
-import { BsDroplet } from "react-icons/bs";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 import { IoMdClose } from "react-icons/io"; // Close icon for the sidebar
@@ -98,7 +97,7 @@ export default function Header() {
                             to="#"
                             className="text-gray-800 flex hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg w-12 focus:outline-none"
                         >
-                            <BsDroplet size={25} />0
+                           <h3>Login</h3>
                         </Link>
                         <NavLink
                             to="#"

@@ -17,6 +17,7 @@ import Technique from './components/SideBar/Technique/Technique.jsx'
 import Agriculture from './components/SideBar/Agriculture.jsx'
 import Industry from './components/SideBar/Industry.jsx'
 import Campaigns from './components/SideBar/Campaigns.jsx'
+import Donate from './components/Donate/Donate.jsx'
 
 
 const router=createBrowserRouter([
@@ -66,6 +67,10 @@ const router=createBrowserRouter([
       {
         path: "/campaigns",
         element: <Campaigns/>
+      },
+      {
+        path: "/donate",
+        element: <Donate/>
       },
     ]
   }

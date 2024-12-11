@@ -1,87 +1,99 @@
 
-import React from 'react';
+
 
 const Content = () => {
   return (
-    <div className="bg-gray-100">
-      {/* Title Section */}
-      <div className="text-center py-10">
-        <h1 className="text-4xl font-semibold text-gray-800">Water Scarcity</h1>
-        <h3 className="text-xl text-gray-600 mt-4">
-          Addressing the growing lack of available water to meet children’s needs.
-        </h3>
+     
+    <div className="container mx-auto p-6 bg-gray-100">
+      <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">Water Management</h1>
+
+      {/* Topic 1: Water Mangement */}
+      <div className="flex justify-between bg-white p-6 rounded-lg shadow-md mb-8">
+        <div className="w-3/5 text-gray-700 text-lg">
+          <h3 className="text-2xl font-semibold">Water Management</h3>
+          <p className="mt-4">
+          Water management due to water scarcity focuses on implementing strategies, technologies, and policies to ensure the sustainable use of available water resources in areas facing limited or diminishing water supplies. Water scarcity can arise due to various factors, including natural climate conditions, population growth, increased water demand, and inefficient water use.
+          </p>
+          <a href="test.html" className="mt-4 text-blue-600 font-semibold hover:underline">Know More</a>
+        </div>
+        <img src="src/assets/waterMangement.jpg" alt="Wastewater Treatment" className="w-2/5 rounded-lg" />
       </div>
 
-      {/* Water Image */}
-      <img
-        src="src/assets/content1.webp"
-        alt="Water Scarcity"
-        className="w-full h-auto"
-      />
-
-      {/* Content Section */}
-      <div className="max-w-4xl mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
-        <p className="text-lg text-justify text-gray-700">
-          Even in countries with adequate water resources, water scarcity is not uncommon. 
-          Although this may be due to a number of factors — collapsed infrastructure and distribution systems, 
-          contamination, conflict, or poor management of water resources — it is clear that climate change, as well as human factors, 
-          are increasingly denying children their right to safe water and sanitation.
-        </p>
-        <br />
-        <p className="text-lg text-justify text-gray-700">
-          Water scarcity limits access to safe water for drinking and for practicing basic hygiene at home, in schools, 
-          and in healthcare facilities. When water is scarce, sewage systems can fail and the threat of contracting diseases like cholera surges. 
-          Scarce water also becomes more expensive.
-        </p>
-        <br />
-        <p className="text-lg text-justify text-gray-700">
-          Water scarcity takes a greater toll on women and children because they are often the ones responsible for collecting it. 
-          When water is further away, it requires more time to collect, which often means less time at school. 
-          Particularly for girls, a shortage of water in schools impacts student enrolment, attendance, and performance. 
-          Carrying water long distances is also an enormous physical burden and can expose children to safety risks and exploitation.
-        </p>
+      {/* Topic 2: Recycling and Reuse */}
+      <div className="flex justify-between bg-white p-6 rounded-lg shadow-md mb-8">
+        <div className="w-3/5 text-gray-700 text-lg">
+          <h3 className="text-2xl font-semibold">Recycling and Reuse</h3>
+          <p className="mt-4">
+            Recycling and reusing wastewater reduces the need for freshwater, conserves resources, and minimizes environmental impact. It is an essential step toward sustainability in water management.
+          </p>
+          <a href="recycling-reuse.html" className="mt-4 text-blue-600 font-semibold hover:underline">Know More</a>
+        </div>
+        <img src="src/assets/reuse.jpg" alt="Recycling and Reuse" className="w-2/5 rounded-lg" />
       </div>
 
-      {/* Water Image 2 */}
-      <img
-        src="/src/assets/content2.png"
-        alt="Water Scarcity"
-        className="w-full h-auto my-10"
-      />
-
-      {/* Key Facts Section */}
-      <div className="max-w-4xl mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
-        <h2 className="text-2xl text-center font-semibold text-gray-800 mb-4">Key Facts</h2>
-        <ul className="list-disc pl-8 text-lg text-gray-700">
-          <li>Four billion people — almost two thirds of the world’s population — experience severe water scarcity for at least one month each year.</li>
-          <li>Over two billion people live in countries where water supply is inadequate.</li>
-          <li>Half of the world’s population could be living in areas facing water scarcity by as early as 2025.</li>
-          <li>Some 700 million people could be displaced by intense water scarcity by 2030.</li>
-          <li>By 2040, roughly 1 in 4 children worldwide will be living in areas of extremely high water stress.</li>
-        </ul>
+      {/* Topic 3: Water  in Agriculture */}
+      <div className="flex justify-between bg-white p-6 rounded-lg shadow-md mb-8">
+        <div className="w-3/5 text-gray-700 text-lg">
+          <h3 className="text-2xl font-semibold">Water in Agriculture</h3>
+          <p className="mt-4">
+          Water is indispensable in agriculture, supporting everything from crop irrigation to soil health and plant growth. Effective water management is key to ensuring food production, conserving water resources, and adapting to environmental challenges like climate change.
+          </p>
+          <a href="sludge-management.html" className="mt-4 text-blue-600 font-semibold hover:underline">Know More</a>
+        </div>
+        <img src="src/assets/about1.webp" alt="Sludge Management" className="w-2/5 rounded-lg" />
       </div>
 
-      <hr className="my-10 border-gray-300" />
-
-      {/* UNICEF Response Section */}
-      <div className="max-w-4xl mx-auto my-10 p-6 bg-gray-50 shadow-md rounded-lg">
-        <h2 className="text-2xl font-semibold text-gray-800 text-center mb-4">UNICEF’s Response</h2>
-        <p className="text-lg text-justify text-gray-700 mb-4">
-          As the factors driving water scarcity are complex and vary widely across countries and regions, UNICEF works at multiple levels 
-          to introduce context-specific technologies that increase access to safe water and address the impacts of water scarcity. 
-          We focus on:
-        </p>
-        <ul className="list-inside list-decimal pl-8 text-lg text-gray-700">
-          <li><strong>Identifying new water resources:</strong> We assess the availability of water resources using various technologies, including remote sensing and geophysical surveys and field investigations.</li>
-          <li><strong>Improving the efficiency of water resources:</strong> We rehabilitate urban water distribution networks and treatment systems to reduce water leakage and contamination, promoting wastewater reuse for agriculture to protect groundwater.</li>
-          <li><strong>Planning for urban scarcity:</strong> We plan for future water needs by identifying available resources to reduce the risk of cities running out of water.</li>
-          <li><strong>Expanding technologies to ensure climate resilience:</strong> We support and develop climate-resilient water sources, including the use of deeper groundwater reserves through solar-powered water networks. We also advance water storage through small-scale retention structures, managed aquifer recharge (where water is pumped into underground reserves to improve its quality), and rainwater harvesting.</li>
-          <li><strong>Changing behaviors:</strong> We work with schools and communities to promote an understanding of the value of water and the importance of its protection, including by supporting environmental clubs in schools.</li>
-          <li><strong>Planning national water needs:</strong> We work with key stakeholders at national and sub-national levels to understand the water requirements for domestic use and for health and sanitation, and advocate to ensure that this is reflected in national planning considerations.</li>
-          <li><strong>Supporting the WASH sector:</strong> We develop technical guidance, manuals, and online training programmes for WASH practitioners to improve standards for water access.</li>
-        </ul>
+      {/* Topic 4: Water in Industry*/}
+      <div className="flex justify-between bg-white p-6 rounded-lg shadow-md mb-8">
+        <div className="w-3/5 text-gray-700 text-lg">
+          <h3 className="text-2xl font-semibold">Water in Industry</h3>
+          <p className="mt-4">
+          water scarcity poses significant challenges to industries, including operational disruptions, increased costs, regulatory pressures, and environmental impacts. To mitigate these issues, industries are increasingly focusing on water efficiency, recycling, and sustainable practices to conserve this precious resource.
+          </p>
+          <a href="wastewater-policies.html" className="mt-4 text-blue-600 font-semibold hover:underline">Know More</a>
+        </div>
+        <img src="src/assets/industry.jpeg" alt="Wastewater Policies" className="w-2/5 rounded-lg" />
       </div>
+
+      {/* Topic 5: Smart Cities and Hydroinformatics */}
+      <div className="flex justify-between bg-white p-6 rounded-lg shadow-md mb-8">
+        <div className="w-3/5 text-gray-700 text-lg">
+          <h3 className="text-2xl font-semibold">Awareness Campaigns</h3>
+          <p className="mt-4">
+          An awareness campaign for water scarcity is a crucial initiative aimed at educating the public, businesses, and policymakers about the importance of water conservation and the growing challenges of water scarcity. The campaign seeks to encourage responsible water usage, promote sustainable practices, and raise awareness about the social, environmental, and economic impacts of water scarcity.
+          </p>
+          <a href="wastewater-policies.html" className="mt-4 text-blue-600 font-semibold hover:underline">Know More</a>
+        </div>
+        <img src="wastewater5.jpg" alt="Smart Cities and Hydroinformatics" className="w-2/5 rounded-lg" />
+      </div>
+
+      {/* Topic 6: Impact of Climate Change on Wastewater Systems */}
+      <div className="flex justify-between bg-white p-6 rounded-lg shadow-md mb-8">
+        <div className="w-3/5 text-gray-700 text-lg">
+          <h3 className="text-2xl font-semibold"> Wastewater Systems</h3>
+          <p className="mt-4">
+          The wastewater system plays a crucial role in managing water resources, particularly in the context of water scarcity. Wastewater management involves the treatment and reuse of used water, which can help mitigate some of the challenges posed by water scarcity. 
+          </p>
+          <a href="wastewater-policies.html" className="mt-4 text-blue-600 font-semibold hover:underline">Know More</a>
+        </div>
+        <img src="wastewater6.jpg" alt="Impact of Climate Change" className="w-2/5 rounded-lg" />
+      </div>
+
+      {/* Topic 7: Cost of Wastewater Management */}
+      <div className="flex justify-between bg-white p-6 rounded-lg shadow-md mb-8">
+        <div className="w-3/5 text-gray-700 text-lg">
+          <h3 className="text-2xl font-semibold">Cost of Wastewater Management</h3>
+          <p className="mt-4">
+          The cost of water management systems can vary greatly depending on several factors, such as the scale of the system, the technology used, the region, and the specific needs of the area (e.g., water treatment, distribution, storage, or wastewater management).
+          </p>
+          <a href="wastewater-policies.html" className="mt-4 text-blue-600 font-semibold hover:underline">Know More</a>
+        </div>
+        <img src="wastewater7.jpg" alt="Cost of Wastewater Management" className="w-2/5 rounded-lg" />
+      </div>
+
+     
     </div>
+ 
   );
 };
 

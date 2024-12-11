@@ -21,10 +21,10 @@ export default function Footer() {
                   <div className="w-full md:w-1/3 p-4">
                     <h4 className="text-lg font-semibold">Quick Links</h4>
                     <ul>
-                      <li><a href="#home" className="text-blue-400 hover:underline">Home</a></li>
-                      <li><a href="#ask-an-expert" className="text-blue-400 hover:underline">Ask an Expert</a></li>
-                      <li><a href="#about" className="text-blue-400 hover:underline">About</a></li>
-                      <li><a href="#contact" className="text-blue-400 hover:underline">Contact</a></li>
+                      <li><a href='/' className="text-blue-400 hover:underline">Home</a></li>
+                      <li><a href="/ask-an-expert" className="text-blue-400 hover:underline">Ask an Expert</a></li>
+                      <li><a href="/about" className="text-blue-400 hover:underline">About</a></li>
+                      <li><a href="/contact" className="text-blue-400 hover:underline">Contact</a></li>
                     </ul>
                   </div>
         
