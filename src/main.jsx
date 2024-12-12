@@ -19,6 +19,9 @@ import Industry from './components/SideBar/Industry.jsx'
 import Campaigns from './components/SideBar/Campaigns.jsx'
 import Donate from './components/Donate/Donate.jsx'
 import Login from './Login.jsx'
+import Signup from './SignUp.jsx'
+import Feed from "./components/Feed/Feed";
+import QueryDetails from "./components/Query/QueryDetails";
 
 
 const router=createBrowserRouter([
@@ -41,6 +44,14 @@ const router=createBrowserRouter([
       {
         path :"Add Question",
         element: <AddQuestion/>
+      },
+      {
+        path : "/queries",
+        element: <Feed/>
+      },
+      {
+        path : "/query/:queryId",
+        element: <QueryDetails/>
       },
       {
        path :"/contact",
@@ -78,8 +89,8 @@ const router=createBrowserRouter([
         element: <Login/>
       },
       {
-        path: "",
-        element: ""
+        path: "/signup",
+        element: <Signup/>
       },
     ]
   }
