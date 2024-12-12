@@ -13,12 +13,17 @@ import { Provider } from 'react-redux'
 import Content from './components/Content/Content.jsx'
 import store from './components/store/store.jsx'
 import Management from './components/SideBar/waterManage.jsx/Management.jsx'
-import Technique from './components/SideBar/Technique/Technique.jsx'
 import Agriculture from './components/SideBar/Agriculture.jsx'
 import Industry from './components/SideBar/Industry.jsx'
 import Campaigns from './components/SideBar/Campaigns.jsx'
 import Donate from './components/Donate/Donate.jsx'
 import Login from './Login.jsx'
+import Reuse from './components/SideBar/Reuse.jsx'
+import WasteWater from './components/SideBar/WasteWater.jsx'
+import Sustanibility from './components/SideBar/Sustanibility.jsx'
+import Signup from './SignUp.jsx'
+import Soil from './components/SideBar/Soil.jsx'
+import Profile from './components/DashBoard/Profile.jsx'
 
 
 const router=createBrowserRouter([
@@ -53,9 +58,6 @@ const router=createBrowserRouter([
       {
        path: "/management",
        element: <Management/>
-      },{
-        path: "/technique",
-        element: <Technique/>
       },
       {
         path: "/agriculture",
@@ -78,8 +80,28 @@ const router=createBrowserRouter([
         element: <Login/>
       },
       {
-        path: "",
-        element: ""
+       path:"/reuse",
+       element :<Reuse/>
+      },
+      {
+       path: "/wastewater",
+       element: <WasteWater/>
+      },
+      {
+       path: "/sustain",
+       element : <Sustanibility/>
+      },
+      {
+        path: "/signup",
+        element: <Signup/>
+      },
+      {
+        path: "/soil",
+        element: <Soil/>
+      },
+      {
+        path: "/profile",
+        element: <Profile/>
       },
     ]
   }

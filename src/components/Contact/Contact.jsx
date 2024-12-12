@@ -1,8 +1,51 @@
-import React from 'react'
+
+import {Link} from "react-router-dom"
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser'; 
 
 export default function Contact() {
-    return (
-        <div className="relative flex items-top justify-center min-h-[500px] bg-white sm:items-center "> 
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    if (!name || !email || !phone || !message) {
+      alert('Please fill in all fields.');
+      return;
+    }
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      phone_number: phone,
+      message: message,
+    };
+
+    try {
+      const response = await emailjs.send(
+        'service_gx8or1g', // Replace with your service ID
+        'service_gx8or1gtemplate_ye1rex6', // Replace with your template ID
+        templateParams,
+        'rN3EDZV6Pz8tGUtIs' // Replace with your user ID
+      );
+
+      alert('Message sent successfully!');
+      setName('');
+      setEmail('');
+      setPhone('');
+      setMessage('');
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Failed to send message. Please try again later.');
+    }
+  };
+
+  return (
+    // ... (Your existing JSX code for the contact form) ...
+    <div className="relative flex items-top justify-center min-h-[500px] bg-white sm:items-center "> 
             <div className="max-w-6xl mx-auto sm:px-6 lg:px-8 mt-0 pb-3">
                 <div className="mt-8 overflow-hidden ">
                     <div className="grid grid-cols-1 md:grid-cols-2 ">
@@ -126,17 +169,32 @@ export default function Contact() {
                                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
                             </div>
+                            <div className="flex flex-col mt-2">
+                                <label for="msg" className="hidden">
+                                    Message
+                                </label>
+                                <input
+                                    type="text"
+                                    name="msg"
+                                    id="msg"
+                                    placeholder="Your message"
+                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                                />
+                            </div>
 
-                            <button
+                           <Link>
+                           <button
                                 type="submit"
                                 className="md:w-32 bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300"
+                                onClick={() => alert("Registered Succesfully")}
                             >
                                 Submit
-                            </button>
+                            </button> 
+                           </Link>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    );
+  );
 }

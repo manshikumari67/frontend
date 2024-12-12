@@ -1,5 +1,6 @@
 
-import {  NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+
 
 export default function Home() {
 
@@ -7,11 +8,15 @@ export default function Home() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleCardClick = (text) => {
+    alert(`Navigating to ${text}`);
+  };
+
     return (
         <div>
-            <aside className="relative overflow-hidden text-black max-h-full h-[600px] object-cover  ">
-                 <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8 h-[-400px]">
-                     <div className="max-w-xl sm:mt-20 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
+            <aside className="relative overflow-hidden text-black max-h-full h-[500px] object-cover  ">
+                 <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8 h-[-400px] ">
+                     <div className="max-w-xl sm:mt-20 mt-80 space-y-8 text-center sm:text-left ">
                          <h2 className="text-4xl font-bold sm:text-4xl text-gray mt-36">
                          Water is a precious gift of nature. We should not waste it.
                              <span className="hidden sm:block text-4xl"></span>
@@ -33,31 +38,79 @@ export default function Home() {
                     </div>
                  </div>
                     
-                <div className="absolute inset-0 w-full  h-[500px] object-cover">
-                     <img className="w-full" src="src/assets/home 1.webp" alt="image1" />
-                </div>
-             </aside>
-
-             <div className=' h-4'></div>
-
-
-             <aside className="relative overflow-hidden text-black  h-[480px] object-cover ">
-                 <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
-                     <div className="max-w-md  text-right  sm:text-left sm:ml-auto mr-1 mt-2 ">
-                         <h5 className="text-xl  sm:text-xl text-gray ">
-                         Water scarcity is a critical global issue that occurs when the demand for water exceeds the available supply in a given region. It can result from both physical scarcity (where there is not enough water to meet the needs of people) and economic scarcity (where financial or infrastructural barriers prevent access to water, even if it's locally available). There are various factors contributing to water scarcity.
-                             <span className="hidden sm:block text-4xl"></span>
-                         </h5>
-
+                 <div className="absolute inset-0 w-full h-[500px]">
+                <video 
+                     className="w-full h-full object-cover" 
+                     src="src/assets/video1.mp4" 
+                     autoPlay 
+                     loop 
+                     muted 
+                     playsInline
+                     ></video>
                     </div>
-                 </div>
-
-                <div className="absolute inset-0 w-[750px]  h-[570px] object-cover">
-                     <img className="w-full" src="src/assets/home2.jpg" alt="image2" />
-                </div>
              </aside>
 
-             <div className=' mt-6 bg-black h-4'></div>
+
+           
+      {/* Title Section */}
+      <div className="text-center py-10">
+        <h1 className="text-4xl font-semibold text-gray-800">Water Scarcity</h1>
+        <h3 className="text-xl text-gray-600 mt-4">
+          Addressing the growing lack of available water to meet children’s needs.
+        </h3>
+      </div>
+
+      {/* Water Image */}
+      <img
+        src="src/assets/content1.webp"
+        alt="Water Scarcity"
+        className="w-full h-auto"
+      />
+
+      {/* Content Section */}
+      <div className="max-w-4xl mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
+        <p className="text-lg text-justify text-gray-700">
+          Even in countries with adequate water resources, water scarcity is not uncommon. 
+          Although this may be due to a number of factors — collapsed infrastructure and distribution systems, 
+          contamination, conflict, or poor management of water resources — it is clear that climate change, as well as human factors, 
+          are increasingly denying children their right to safe water and sanitation.
+        </p>
+        <br />
+        <p className="text-lg text-justify text-gray-700">
+          Water scarcity limits access to safe water for drinking and for practicing basic hygiene at home, in schools, 
+          and in healthcare facilities. When water is scarce, sewage systems can fail and the threat of contracting diseases like cholera surges. 
+          Scarce water also becomes more expensive.
+        </p>
+        <br />
+        <p className="text-lg text-justify text-gray-700">
+          Water scarcity takes a greater toll on women and children because they are often the ones responsible for collecting it. 
+          When water is further away, it requires more time to collect, which often means less time at school. 
+          Particularly for girls, a shortage of water in schools impacts student enrolment, attendance, and performance. 
+          Carrying water long distances is also an enormous physical burden and can expose children to safety risks and exploitation.
+        </p>
+      </div>
+
+      {/* Water Image 2 */}
+      <img
+        src="/src/assets/content2.png"
+        alt="Water Scarcity"
+        className="w-full h-auto my-10"
+      />
+
+      {/* Key Facts Section */}
+      <div className="max-w-4xl mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
+        <h2 className="text-2xl text-center font-semibold text-gray-800 mb-4">Key Facts</h2>
+        <ul className="list-disc pl-8 text-lg text-gray-700">
+          <li>Four billion people — almost two thirds of the world’s population — experience severe water scarcity for at least one month each year.</li>
+          <li>Over two billion people live in countries where water supply is inadequate.</li>
+          <li>Half of the world’s population could be living in areas facing water scarcity by as early as 2025.</li>
+          <li>Some 700 million people could be displaced by intense water scarcity by 2030.</li>
+          <li>By 2040, roughly 1 in 4 children worldwide will be living in areas of extremely high water stress.</li>
+        </ul>
+      </div>
+ 
+
+            <div className=' mt-6 bg-black h-4'></div>
 
              <aside className="relative overflow-hidden text-black  h-[150px] object-cover  ">
                     <div className=" text-left sm:text-left sm:ml-auto max-w-screen-lg  mr-32 mt-10 ">
@@ -76,12 +129,111 @@ export default function Home() {
 
             <h1 className="text-center text-2xl sm:text-1xl py-10 font-medium">Water scarcity profoundly impacts bird populations by disrupting their habitats and food sources. The drying up of wetlands and water bodies deprives birds of essential nesting, feeding, and breeding grounds, while the decline in aquatic life reduces their food availability. Migration routes are disrupted as stopover points vanish, increasing energy demands and mortality. Birds face dehydration, heat stress, and intensified competition at limited water sources, making them more vulnerable to predation. </h1>
 
-        <div className=' bg-black h-4'></div>
 
 
-        <div className=' ml-40 w-[1000px] h-[500px] border-2'>
-            <img className='  w-[2000px] h-[500px]' src="src/assets/map.webp" alt="" />
-        </div>
+            <div className="bg-gradient-to-b from-blue-50 to-blue-200 h-80">
+  <header className="text-center bg-gradient-to-r from-blue-700 to-cyan-500 text-white py-8 shadow-lg">
+    <h1 className="text-3xl font-semibold tracking-wide">Help Change Lives with Safe Water</h1>
+  </header>
+
+  <div className="flex justify-center gap-6 p-8 flex-wrap">
+    <div
+      className="bg-gradient-to-b from-blue-700 to-blue-800 text-white w-56 h-32 flex flex-col items-center justify-center rounded-lg shadow-xl text-center cursor-pointer transform transition-all duration-300 hover:translate-y-[-10px] hover:shadow-2xl"
+      onClick={() => handleCardClick('Donate Now')}
+    >
+      <i className="text-4xl mb-2 text-sky-200">&#128167;</i>
+      <Link to="/donate" 
+       onClick={scrollToTop}
+      >
+      <span className="font-bold tracking-wide">Donate Now</span>
+      </Link>
+    </div>
+    <div
+      className="bg-gradient-to-b from-blue-700 to-blue-800 text-white w-56 h-32 flex flex-col items-center justify-center rounded-lg shadow-xl text-center cursor-pointer transform transition-all duration-300 hover:translate-y-[-10px] hover:shadow-2xl"
+      onClick={() => handleCardClick('Give Monthly')}
+    >
+      <i className="text-4xl mb-2 text-sky-200">&#128197;</i>
+      <Link to="/campaigns"
+      onClick={scrollToTop}
+      >
+      <span className="font-bold tracking-wide">Awareness</span>
+      </Link>
+    </div>
+    <div
+      className="bg-gradient-to-b from-blue-700 to-blue-800 text-white w-56 h-32 flex flex-col items-center justify-center rounded-lg shadow-xl text-center cursor-pointer transform transition-all duration-300 hover:translate-y-[-10px] hover:shadow-2xl"
+      onClick={() => handleCardClick('Get Involved')}
+    >
+      <i className="text-4xl mb-2 text-sky-200">&#128100;</i>
+      <Link to="/management"
+      onClick={scrollToTop}
+      >
+      <span className="font-bold tracking-wide">Management</span>
+      </Link>
+    </div>
+  </div>
+</div>
+
+
+<div className="font-sans text-gray-800 bg-gray-100 p-5">
+      <h1 className="text-center text-4xl text-blue-600 mb-6">
+        Rainwater Harvesting for Schools in Chennai
+      </h1>
+      <p className="mb-6">
+        In urban Chennai, frequent water shortages severely disrupted daily school activities. Many schools lacked reliable access to water for drinking, sanitation, and hygiene. Students often missed classes due to the unavailability of basic water supplies, impacting their education and well-being.
+      </p>
+
+      <h2 className="text-2xl text-blue-600 mb-4">Challenge:</h2>
+      <p className="mb-6">
+        In urban Chennai, frequent water shortages severely disrupted daily school activities. Many schools lacked reliable access to water for drinking, sanitation, and hygiene. Students often missed classes due to the unavailability of basic water supplies, impacting their education and well-being.
+      </p>
+
+      <h2 className="text-2xl text-blue-600 mb-4">Solution:</h2>
+      <p className="mb-6">
+        With the help of AquaVeda, schools discovered proven rainwater harvesting techniques shared by experts on the platform. Detailed guides, step-by-step tutorials, and community discussions provided schools with the knowledge they needed to implement these solutions effectively.
+      </p>
+      <p className="mb-6">
+        The funding feature on AquaVeda enabled users to donate toward the installation of rainwater harvesting systems in these schools. Contributions came from concerned citizens, alumni, and local organizations who wanted to ensure sustainable water solutions for the next generation.
+      </p>
+
+      <img
+        src="src/assets/real1.jpg"
+        alt="Rainwater Harvesting System"
+        className="mx-auto my-5 max-w-full h-72 rounded-lg"
+      />
+
+      <h2 className="text-2xl text-blue-600 mb-4">Implementation Steps:</h2>
+      <ol className="mb-6 list-decimal pl-5">
+        <li>Expert Consultation: Schools consulted experts on AquaVeda to assess their water needs and potential for rainwater harvesting.</li>
+        <li>System Design: Plans were shared for setting up rooftop rainwater collection systems connected to storage tanks.</li>
+        <li>Funding Support: The AquaVeda community contributed funds for the purchase of equipment, materials, and installation services.</li>
+        <li>Installation: Professional teams installed rainwater harvesting systems, ensuring they were efficient and easy to maintain.</li>
+        <li>Education & Maintenance: Teachers and students received training on maintaining the systems for long-term sustainability.</li>
+      </ol>
+
+      <img
+        src="src/assets/real2.jpg"
+        alt="School Rainwater Harvesting"
+        className="mx-auto my-5 max-w-full h-72 rounded-lg"
+      />
+
+      <h2 className="text-2xl text-blue-600 mb-4">Impact:</h2>
+      <ul className="mb-6 list-disc pl-5">
+        <li>✅ Over 100 schools now have reliable and sustainable water supplies.</li>
+        <li>✅ Students enjoy uninterrupted access to clean water for drinking, sanitation, and hygiene.</li>
+        <li>✅ Improved school attendance and health outcomes due to consistent water availability.</li>
+        <li>✅ Reduced dependence on external water supplies, helping schools save on water costs.</li>
+      </ul>
+
+      <h3 className="text-xl text-blue-600 italic mb-4">Quote from Beneficiary:</h3>
+      <p className="italic mb-6">
+        "With knowledge and funding from AquaVeda, our school no longer worries about water shortages. Our students can focus on their studies without interruption."
+      </p>
+
+      <p className="text-center mt-6 text-gray-600">
+        This detailed story highlights how AquaVeda's knowledge-sharing and funding features facilitated real change.
+      </p>
+    </div>
+
 
 
 
@@ -187,80 +339,10 @@ export default function Home() {
   </div>
         
        
-    <div className=' bg-black h-4'></div>
-
-       <div className='bg-blue-300 w-auto h-20 flex items-center justify-center'>
-          <p className='pr-9'>The water crisis affects millions around the world. Make an impact today.</p>
-          <div>
-          <NavLink
-          onClick={scrollToTop}
-            className="inline-flex text-blue-800 items-center px-6 py-3 font-medium bg-white rounded-lg hover:opacity-75 "                           
-               to="/donate">
-                Donate
-          </NavLink>
-          </div>
-       </div>
-
+   
        <div className=' bg-black h-4'></div>
 
-       <div className="bg-gray-100">
-      {/* Title Section */}
-      <div className="text-center py-10">
-        <h1 className="text-4xl font-semibold text-gray-800">Water Scarcity</h1>
-        <h3 className="text-xl text-gray-600 mt-4">
-          Addressing the growing lack of available water to meet children’s needs.
-        </h3>
-      </div>
-
-      {/* Water Image */}
-      <img
-        src="src/assets/content1.webp"
-        alt="Water Scarcity"
-        className="w-full h-auto"
-      />
-
-      {/* Content Section */}
-      <div className="max-w-4xl mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
-        <p className="text-lg text-justify text-gray-700">
-          Even in countries with adequate water resources, water scarcity is not uncommon. 
-          Although this may be due to a number of factors — collapsed infrastructure and distribution systems, 
-          contamination, conflict, or poor management of water resources — it is clear that climate change, as well as human factors, 
-          are increasingly denying children their right to safe water and sanitation.
-        </p>
-        <br />
-        <p className="text-lg text-justify text-gray-700">
-          Water scarcity limits access to safe water for drinking and for practicing basic hygiene at home, in schools, 
-          and in healthcare facilities. When water is scarce, sewage systems can fail and the threat of contracting diseases like cholera surges. 
-          Scarce water also becomes more expensive.
-        </p>
-        <br />
-        <p className="text-lg text-justify text-gray-700">
-          Water scarcity takes a greater toll on women and children because they are often the ones responsible for collecting it. 
-          When water is further away, it requires more time to collect, which often means less time at school. 
-          Particularly for girls, a shortage of water in schools impacts student enrolment, attendance, and performance. 
-          Carrying water long distances is also an enormous physical burden and can expose children to safety risks and exploitation.
-        </p>
-      </div>
-
-      {/* Water Image 2 */}
-      <img
-        src="/src/assets/content2.png"
-        alt="Water Scarcity"
-        className="w-full h-auto my-10"
-      />
-
-      {/* Key Facts Section */}
-      <div className="max-w-4xl mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
-        <h2 className="text-2xl text-center font-semibold text-gray-800 mb-4">Key Facts</h2>
-        <ul className="list-disc pl-8 text-lg text-gray-700">
-          <li>Four billion people — almost two thirds of the world’s population — experience severe water scarcity for at least one month each year.</li>
-          <li>Over two billion people live in countries where water supply is inadequate.</li>
-          <li>Half of the world’s population could be living in areas facing water scarcity by as early as 2025.</li>
-          <li>Some 700 million people could be displaced by intense water scarcity by 2030.</li>
-          <li>By 2040, roughly 1 in 4 children worldwide will be living in areas of extremely high water stress.</li>
-        </ul>
-      </div>
-
+       <div>
       <hr className="my-10 border-gray-300" />
 
       {/* UNICEF Response Section */}
@@ -282,6 +364,23 @@ export default function Home() {
         </ul>
       </div>
     </div>
+
+
+
+    <div className=' bg-black h-4'></div>
+
+<div className='bg-blue-300 w-auto h-20 flex items-center justify-center'>
+   <p className='pr-9'>The water crisis affects millions around the world. Make an impact today.</p>
+   <div>
+   <NavLink
+   onClick={scrollToTop}
+     className="inline-flex text-blue-800 items-center px-6 py-3 font-medium bg-white rounded-lg hover:opacity-75 "                           
+        to="/donate">
+         Donate
+   </NavLink>
+   </div>
+</div>
+
 
            
              

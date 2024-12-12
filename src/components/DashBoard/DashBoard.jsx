@@ -6,6 +6,8 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";;
 import { FaYoutube } from "react-icons/fa";
+import Profile from "./Profile";
+import {Link} from "react-router-dom"
 
 const DashBoard = ({ isSidebarOpen, toggleSidebar }) => {
   return (
@@ -24,9 +26,12 @@ const DashBoard = ({ isSidebarOpen, toggleSidebar }) => {
             <li>
               <NavLink to="#" className="menu-item">Dashboard</NavLink>
             </li>
-            <li>
-              <NavLink to="#" className="menu-item"> Profile</NavLink>
-            </li>
+        
+            <NavLink to="/profile" className="menu-item">
+              Profile
+           </NavLink>
+
+           
             <li>
               <NavLink to="#" className="menu-item">Overview</NavLink>
             </li>
@@ -34,13 +39,13 @@ const DashBoard = ({ isSidebarOpen, toggleSidebar }) => {
               <NavLink to="#" className="menu-item">Events</NavLink>
             </li>
             <li>
-              <NavLink to="#" className="menu-item">About</NavLink>
+              <NavLink to="/about" className="menu-item">About</NavLink>
             </li>
             <li>
               <NavLink to="#" className="menu-item">Feedback</NavLink>
             </li>
             <li>
-              <NavLink to="#" className="menu-item">Contact</NavLink>
+              <NavLink to="/contact" className="menu-item">Contact</NavLink>
             </li>
           </ul>
         </div>
