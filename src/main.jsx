@@ -24,6 +24,10 @@ import Sustanibility from './components/SideBar/Sustanibility.jsx'
 import Signup from './SignUp.jsx'
 import Soil from './components/SideBar/Soil.jsx'
 import Profile from './components/DashBoard/Profile.jsx'
+import Locator from './components/DashBoard/Locator.jsx'
+import Calculator from './components/DashBoard/calculator.jsx'
+import PaymentStatus from './components/Donate/PaymentStatus.jsx'
+
 
 
 const router=createBrowserRouter([
@@ -102,6 +106,18 @@ const router=createBrowserRouter([
       {
         path: "/profile",
         element: <Profile/>
+      },
+      {
+       path:"/locator",
+       element:<Locator/>
+      },
+      {
+        path: "/calculator",
+        element: <Calculator/>
+      },
+      {
+       path: "/paymentStatus",
+       element: <PaymentStatus/>
       },
     ]
   }

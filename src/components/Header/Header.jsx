@@ -100,6 +100,13 @@ export default function Header() {
                         >
                             <h3>Login</h3>
                         </NavLink>
+                        <NavLink
+                            to="#"
+                            onClick={toggleSidebar} // Trigger sidebar toggle
+                            className="text-blue-900 hover:text-blue-800 focus:ring-4 font-medium rounded-lg px-4 lg:px-5 py-2 ml-4 focus:outline-none"
+                        >
+                            <CgProfile size={37} />
+                        </NavLink>
                     </div>
                 </div>
             </nav>
@@ -153,10 +160,10 @@ export default function Header() {
                             <NavLink to="/profile" className="menu-item">Profile</NavLink>
                         </li>
                         <li>
-                            <NavLink to="#" className="menu-item">Overview</NavLink>
+                            <NavLink to="/locator" className="menu-item">Water resource Locator</NavLink>
                         </li>
                         <li>
-                            <NavLink to="#" className="menu-item">Events</NavLink>
+                        <NavLink to="/calculator" className="menu-item">Water Footprint Calculator</NavLink>
                         </li>
                         <li>
                             <NavLink to="/about" className="menu-item">About</NavLink>

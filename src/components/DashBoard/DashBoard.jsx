@@ -8,6 +8,7 @@ import { FaInstagram } from "react-icons/fa";;
 import { FaYoutube } from "react-icons/fa";
 import Profile from "./Profile";
 import {Link} from "react-router-dom"
+import Locator from "./Locator";
 
 const DashBoard = ({ isSidebarOpen, toggleSidebar }) => {
   return (
@@ -33,10 +34,10 @@ const DashBoard = ({ isSidebarOpen, toggleSidebar }) => {
 
            
             <li>
-              <NavLink to="#" className="menu-item">Overview</NavLink>
+              <NavLink to="/locator" className="menu-item">Water resource Locator</NavLink>
             </li>
             <li>
-              <NavLink to="#" className="menu-item">Events</NavLink>
+              <NavLink to="/calculator" className="menu-item">Water Footprint Calculator</NavLink>
             </li>
             <li>
               <NavLink to="/about" className="menu-item">About</NavLink>
