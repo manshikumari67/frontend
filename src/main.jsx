@@ -27,7 +27,7 @@ import Profile from './components/DashBoard/Profile.jsx'
 import Locator from './components/DashBoard/Locator.jsx'
 import Calculator from './components/DashBoard/calculator.jsx'
 import PaymentStatus from './components/Donate/PaymentStatus.jsx'
-
+import Chatbot from './components/Chatbot/Chatbot.jsx'
 
 
 const router=createBrowserRouter([
@@ -119,6 +119,10 @@ const router=createBrowserRouter([
        path: "/paymentStatus",
        element: <PaymentStatus/>
       },
+      {
+        path: "/Chatbot",
+        element: <Chatbot/>
+      }
     ]
   }
 ])

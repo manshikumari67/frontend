@@ -64,7 +64,7 @@ const Content = () => {
           </p>
           <a href="/campaigns" className="mt-4 text-blue-600 font-semibold hover:underline">Know More</a>
         </div>
-        <img src="wastewater5.jpg" alt="Smart Cities and Hydroinformatics" className="w-2/5 rounded-lg" />
+        <img src="src/assets/camp.jpg" alt="Smart Cities and Hydroinformatics" className="w-2/5 rounded-lg" />
       </div>
 
       {/* Topic 6:  Wastewater Systems */}
@@ -76,7 +76,7 @@ const Content = () => {
           </p>
           <a href="/wastewater" className="mt-4 text-blue-600 font-semibold hover:underline">Know More</a>
         </div>
-        <img src="wastewater6.jpg" alt="Impact of Climate Change" className="w-2/5 rounded-lg" />
+        <img src="src/assets/waste6.jpg" alt="Impact of Climate Change" className="w-2/5 rounded-lg" />
       </div>
 
 
@@ -89,7 +89,7 @@ const Content = () => {
           </p>
           <a href="/soil" className="mt-4 text-blue-600 font-semibold hover:underline">Know More</a>
         </div>
-        <img src="wastewater7.jpg" alt="Cost of Wastewater Management" className="w-2/5 rounded-lg" />
+        <img src="src/assets/soil.jpg" alt="Cost of Wastewater Management" className="w-2/5 rounded-lg" />
       </div>
 
       {/* Topic 8: Sustanibility */}
@@ -101,7 +101,7 @@ const Content = () => {
           </p>
           <a href="/sustain" className="mt-4 text-blue-600 font-semibold hover:underline">Know More</a>
         </div>
-        <img src="wastewater7.jpg" alt="Cost of Wastewater Management" className="w-2/5 rounded-lg" />
+        <img src="src/assets/farm.jpg" alt="Cost of Wastewater Management" className="w-2/5 rounded-lg" />
       </div>
 
      
