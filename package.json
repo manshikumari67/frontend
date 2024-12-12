@@ -21,6 +21,7 @@
     "emailjs-com": "^3.2.0",
     "html-react-parser": "^5.1.19",
     "javascript-time-ago": "^2.5.11",
+    "jwt-decode": "^4.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
